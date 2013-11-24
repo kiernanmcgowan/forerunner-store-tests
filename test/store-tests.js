@@ -1,5 +1,5 @@
-// queue-test
-// tests for forerunner queue modules
+// store-test
+// tests for forerunner store modules
 
 var vows = require('vows');
 var async = require('async');
@@ -8,8 +8,8 @@ var assert = require('assert');
 
 var sampleData = [];
 
-// take in a queue object just like forerunner would
-// this way the queue object can be initialized properly w/o the tests being concerned
+// take in a store object just like forerunner would
+// this way the store object can be initialized properly w/o the tests being concerned
 function testModule(storeObject, testCallbacks) {
   var tests = vows.describe('Store')
   .addBatch({
