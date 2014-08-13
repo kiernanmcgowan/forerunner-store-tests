@@ -118,6 +118,46 @@ function testModule(storeObject, testCallbacks) {
       }
     }
   })
+  .addBatch({
+    'When job ids dont exist': {
+      topic: function() {
+        storeObject.progress('a', 'foo', this.callback);
+      },
+      'an error is returned by progress': function(err, res) {
+        assert.instanceOf(err, Error);
+      }
+    }
+  })
+  .addBatch({
+    'When job ids dont exist': {
+      topic: function() {
+        storeObject.countFailed('a', 'foo', this.callback);
+      },
+      'an error is returned by countFailed': function(err, res) {
+        assert.instanceOf(err, Error);
+      }
+    }
+  })
+  .addBatch({
+    'When job ids dont exist': {
+      topic: function() {
+        storeObject.failed('a', this.callback);
+      },
+      'an error is returned by failed': function(err, res) {
+        assert.instanceOf(err, Error);
+      }
+    }
+  })
+  .addBatch({
+    'When job ids dont exist': {
+      topic: function() {
+        storeObject.complete('a', 'foo', this.callback);
+      },
+      'an error is returned by complete': function(err, res) {
+        assert.instanceOf(err, Error);
+      }
+    }
+  })
   .run({reporter: require('vows/lib/vows/reporters/spec')}, testCallbacks);
 }
 module.exports = testModule;
