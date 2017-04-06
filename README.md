@@ -1,6 +1,8 @@
 forerunner-store-tests
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kiernanmcgowan/forerunner-store-tests.svg)](https://greenkeeper.io/)
+
 Baseline tests for for creating a store module for forerunner. Passing these tests will help to make sure that your custom store module will work to the expectations of the forerunner manager.
 
 `npm install forerunner-store-tests`
