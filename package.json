@@ -7,8 +7,8 @@
     "url": "https://github.com/dropdownmenu/forerunner-store-tests.git"
   },
   "dependencies": {
-    "vows": "0.7.x",
-    "async": "0.2.x",
-    "underscore": "~1.5.2"
+    "vows": "~0.8.1",
+    "async": "~2.3.0",
+    "underscore": "~1.8.3"
   }
 }
